@@ -147,6 +147,7 @@ label{
     padding:3vh 0vw;
     background-color: var(--secondary-color);
     color: #FFFFFF;
+    width: 100%;
 }
 
 .drop-option{

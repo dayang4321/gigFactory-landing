@@ -52,6 +52,22 @@
     background-color: var(--primary-color);
 }
 
+#smeSignupForm .drop-option:last-of-type{
+    display: none;
+}
+
+#servicesSelect ~ .btn-group {
+    width: 100%;
+}
+
+.sort-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.multiselect-selected-text{
+    font-size: var(--big-text); 
+}
 
 
 
