@@ -1,0 +1,215 @@
+
+
+:root{
+    --dark-color: #000000;
+    --primary-color:  #004777;
+    --secondary-color: #FF7700;
+    --maroon-color: #A30000;
+  
+    --main-font-family: "Public Sans", Helvetica, Arial, sans-serif;
+    --alt-font-family: "Roboto", Helvetica, Arial, sans-serif;
+  
+   /* sizes 94,         24,18,14*/
+    --h1-font-size: min(max(47px, 6.5vw), 188px);
+    --h2-font-size: min(max(24px, 2.5vw), 96px);
+    --h3-font-size: min(max(20px, 1.875vw), 72px);
+  
+    --big-text: min(max(12px, 1.67vw), 48px);
+    --body-text: min(max(14px, 1.25vw), 36px);
+    --link-text: min(max(10px, 0.98vw), 28px);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: unset;
+} 
+
+h1{
+    font-size: var(--h1-font-size);
+    line-height: 1.17;
+    letter-spacing: -0.05em;
+}
+
+body{
+    color: #FFFFFF;
+    font-family: var(--main-font-family);
+    font-weight: 500;
+}
+
+
+.navbar-nav .nav-item:nth-of-type(2n+1){
+    margin-right: -9vw;
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-family: var(--alt-font-family);
+    font-size: var(--link-text);
+    padding: 6vh 4vw;
+}
+
+.btn{
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: var(--big-text);
+}
+
+.btn:hover {
+    color: unset;
+}
+.orange-btn{
+    background-color: var(--secondary-color);  
+}
+
+.big-text{
+    font-size: var(--big-text);
+    line-height: 1.17;
+}
+
+.cta-btn{
+ padding: 1.8vh 6.25vw;
+ border-radius: max(1.3vw, 10px);
+ text-transform: uppercase;
+}
+
+label{
+    font-size: var(--body-text);
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    height: unset;
+    padding: 1.7vh 2vw;
+    font-size: var(--big-text);
+    line-height: 1.16;
+    color: #000000;
+    border: 1px solid #ced4da;
+    border-radius: max(0.833vw, 6px);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* .selectpicker{
+    width: 100%;
+    height: unset;
+    padding: 1.7vh 2vw;
+    font-size: var(--big-text);
+    line-height: 1.16;
+    color: #000000;
+    border-radius: max(0.833vw, 6px);
+} */
+
+.bootstrap-select>.dropdown-toggle{
+    border-radius: max(0.833vw, 6px);
+    padding: 1.7vh 2vw;
+    font-size: var(--big-text);
+    line-height: 1.16;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    /* color: #212529; */
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle {
+    outline: none;
+    outline:none!important;
+    outline-offset:none;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus {
+    /* box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5); */
+    box-shadow: none;
+}
+
+.dropdown-menu.show{
+    padding:3vh 0vw;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+}
+
+.drop-option{
+    color: #FFFFFF;
+    padding: 0.4vw 1vw 0.4vw 3vw;
+    font-size: var(--body-text);
+}
+
+.submit-btn{
+    border-radius: max(0.833vw, 6px);
+    margin-top:7vh;
+    padding: 1.8vh 6.25vw;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.footer-strip{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    height: 1.9vh
+}
+.footer-strip>span{
+    display: block;
+    flex: 1 1 0px;
+}
+
+.footer-strip>span:nth-of-type(1){
+    background-color: var(--primary-color);
+}
+.footer-strip>span:nth-of-type(2){
+    background-color: var(--secondary-color);
+}
+.footer-strip>span:nth-of-type(3){
+    background-color: var(--maroon-color);
+}
+
+
+
+
+
+
+
+.pro-header{
+    background-image: url(../img/homeBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.hero-container{
+    padding:  4.5vh 0 23.85vh;
+}
+.hero-title{
+    font-weight: 800;
+    margin-bottom:9.5vh;
+}
+
+.hero-title span{
+    color: var(--secondary-color)
+}
+
+
+.signup{
+    padding: 12vh 11vw 14.8vh;
+    background-color: var(--primary-color);
+}
+
+.form-block{
+    max-width: 26.875vw;
+}
+
+.info-block{
+    max-width: 39.6vw;
+}
+
+.signup-title{
+    font-weight: 700;
+}
