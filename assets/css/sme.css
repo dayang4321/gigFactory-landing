@@ -69,6 +69,10 @@
     font-size: var(--big-text); 
 }
 
+.drop-option:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
 
 
 .background-text{
