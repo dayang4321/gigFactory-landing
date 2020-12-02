@@ -1,0 +1,37 @@
+@import url(../css/style.css);
+
+.pro-header{
+    background-image: url(../img/homeBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.hero-container{
+    padding:  4vh 0 23.85vh;
+}
+.hero-title{
+    font-weight: 800;
+    margin-bottom:8vh;
+}
+
+.hero-title span{
+    color: var(--secondary-color)
+}
+
+
+.signup{
+    padding: 12vh 11vw 14.8vh;
+    background-color: var(--primary-color);
+}
+
+.form-block{
+    max-width: 26.875vw;
+}
+
+.info-block{
+    max-width: 39.6vw;
+}
+
+.signup-title{
+    font-weight: 700;
+}
