@@ -58,7 +58,7 @@ body{
 }
 
 .nav-link{
-    color: #FFFFFF;
+    color: inherit;
     font-family: var(--alt-font-family);
     font-size: var(--link-text);
     padding: 5vh 4vw;
@@ -78,6 +78,10 @@ body{
     background-color: var(--secondary-color);  
 }
 
+.blue-btn{
+    background-color: var(--primary-color);  
+}
+
 .big-text{
     font-size: var(--big-text);
     line-height: 1.17;
@@ -92,6 +96,7 @@ body{
 label{
     font-size: var(--body-text);
     display: block;
+    white-space: nowrap;
 }
 
 .form-control {

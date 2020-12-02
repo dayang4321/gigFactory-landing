@@ -1,13 +1,13 @@
 @import url(../css/style.css);
 
-.pro-header{
-  
+.sme-header{
+    color: var(--primary-color);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 650px;
     height: 100vh;
     max-height: 1080px;
-    }
+}
 
 .hero-container{
     /* padding:  4vh 0 23.85vh; */
@@ -15,17 +15,20 @@
 }
 .hero-title{
     font-weight: 800;
-    margin-bottom:8vh;
+    margin-bottom:3.5vh;
+}
+
+.hero-title + h6{
+    margin-bottom:3.5vh;
 }
 
 .hero-title span{
     color: var(--secondary-color)
 }
 
-
 .signup{
     padding: 12vh 11vw 14.8vh;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .form-block{
@@ -39,3 +42,92 @@
 .signup-title{
     font-weight: 700;
 }
+
+
+#smeSignupForm .submit-btn{
+    margin-top: 3vh;
+}
+
+#smeSignupForm .dropdown-menu.show{ 
+    background-color: var(--primary-color);
+}
+
+
+
+
+.background-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text-span{
+    font-weight: 700;
+line-height: 1.17;
+letter-spacing: -0.05em;
+color: rgba(171, 171, 171, 0.35);
+position: absolute;
+white-space: nowrap;
+}
+
+.text-span:nth-of-type(1){
+    left: 3.47vw;
+top: 8.5vh;
+font-size: 6.67vw ;
+}
+
+.text-span:nth-of-type(2){
+    left: 44.3vw;
+    top: 4.4vh;
+font-size: 10vw ;
+}
+
+.text-span:nth-of-type(3){
+    left: 2.08vw;
+    top: 22vh;
+    font-size: 6.67vw ;
+}
+
+.text-span:nth-of-type(4){
+    left: 66.4vw;
+top: 27vh;
+font-size: 5vw ;
+}
+
+.text-span:nth-of-type(5){
+    left: 55.97vw;
+top: 46vh;
+font-size: 3.33vw ;
+}
+.text-span:nth-of-type(6){
+    left: 2vw;
+top: 67vh;
+font-size: 4.44vw ;
+}
+
+.text-span:nth-of-type(7){
+    left: 47.85vw;
+top: 58vh;
+font-size: 6.67vw ;
+}
+
+.text-span:nth-of-type(8){
+left: 50.34vw;
+top: 74vh;
+font-size: 5vw ;
+}
+
+.text-span:nth-of-type(9){
+    left: 9.17vw;
+    top: 82vh;
+    font-size: 10vw ;
+    }
+
+.text-span:nth-of-type(10){
+    left: 74.09vw;
+    top: 86vh;
+    font-size: 5vw ;
+    }
