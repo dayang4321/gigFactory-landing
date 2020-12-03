@@ -105,6 +105,7 @@ label{
     height: unset;
     padding: 1.7vh 2vw;
     font-size: var(--big-text);
+    font-weight: 500;
     line-height: 1.16;
     color: #000000;
     border: 1px solid #ced4da;
@@ -127,7 +128,14 @@ label{
     padding: 1.7vh 2vw;
     font-size: var(--big-text);
     line-height: 1.16;
+    color: black!important;
+    font-weight: 500;
 }
+
+.bootstrap-select>.dropdown-toggle:after {
+    transform: rotateZ(180deg);
+}
+
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
     /* color: #212529; */
     background-color: #FFFFFF;
@@ -164,6 +172,12 @@ label{
     text-transform: uppercase;
     width: 100%;
 }
+
+.invalid-feedback{
+    color: #FFA07A;
+    font-size: 90%;
+}
+
 
 .footer-strip{
     position: absolute;
