@@ -48,6 +48,10 @@
     margin-top: 3vh;
 }
 
+#smeSignupForm .invalid-feedback{
+    color:#00008b;
+}
+
 #smeSignupForm .dropdown-menu.show{ 
     background-color: var(--primary-color);
 }
@@ -67,6 +71,9 @@
 }
 .multiselect-selected-text{
     font-size: var(--big-text); 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .drop-option:hover{

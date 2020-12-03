@@ -59,30 +59,35 @@
       <main>
           <section  class="signup d-flex justify-content-between" id="signup">
               <div class="form-block">
-                  <form class="signup-form" id="smeSignupForm">
+                  <form class="signup-form" novalidate id="smeSignupForm">
                     <div class="form-group">
-                        <label for="proName">Company Name</label>
-                        <input type="text" class="form-control" id="proName" placeholder="">
+                        <label for="smeCompanyName">Company Name</label>
+                        <input type="text" required class="form-control" id="smeCompanyName" placeholder="">
+                        <div class="invalid-feedback">Please enter your company's name</div>
                       </div>
                       <div class="form-group">
-                        <label for="proLinkedIn">Company URL (LinkedIn, Instagram or Company website)</label>
-                        <input type="url" class="form-control" id="proLinkedIn" placeholder="">
+                        <label for="smeCompanyLinkedIn">Company URL (LinkedIn, Instagram or Company website)</label>
+                        <input type="url" required class="form-control" id="smeCompanyLinkedIn" placeholder="">
+                        <div class="invalid-feedback">Please enter your company's LinkedIn url</div>
                       </div>
                       <div class="form-group">
-                        <label for="proLinkedIn">Contact Name</label>
-                        <input type="url" class="form-control" id="proLinkedIn" placeholder="">
+                        <label for="smeContactName">Contact Name</label>
+                        <input type="text" required class="form-control" id="smeContactName" placeholder="">
+                        <div class="invalid-feedback">Please enter your name</div>
                       </div>
                     <div class="form-group">
-                        <label for="proEmail">Contact Email address</label>
-                        <input type="email" class="form-control" id="proEmail" placeholder="">
+                        <label for="smeContactEmail">Contact Email address</label>
+                        <input type="email" required class="form-control" id="smeContactEmail" placeholder="">
+                        <div class="invalid-feedback">Please enter your email</div>
                     </div>
                     <div class="form-group">
-                        <label for="proPhone">Contact Phone Number</label>
-                        <input type="tel" class="form-control" id="proPhone" placeholder="">
+                        <label for="smeContactPhone">Contact Phone Number</label>
+                        <input type="tel" minlength="6" class="form-control" id="smeContactPhone" placeholder="">
+                        <div class="invalid-feedback">Please enter your phone number</div>
                     </div>
                     <div class="form-group">
-                        <label for="proSkill">Services required (Choose multiple options)</label>
-                        <select id="servicesSelect" multiple="multiple">
+                        <label for="smeServicesSelect">Services required (Choose multiple options)</label>
+                        <select id="smeServicesSelect" required multiple="multiple">
                             <option class="drop-option">Web Developer</option>
                             <option class="drop-option">Programmer</option>
                             <option class="drop-option">Accounting</option>
@@ -97,6 +102,7 @@
                             <option class="drop-option">Other</option>
                             <option class="drop-option" value="">&nbsp;</option>
                     </select>
+                    <div class="invalid-feedback skill-feedback">Please select a service</div>
                     </div>
                    
                     <button type="submit" class="btn submit-btn blue-btn">Sign up</button>
@@ -121,16 +127,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <!-- Bootstrap Multiselect JavaScript -->
      <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/js/bootstrap-multiselect.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <script>
-          $(document).ready(function() {
-        $('#servicesSelect').multiselect({
+     <script>
+        $(document).ready(function() {
+      $('#smeServicesSelect').multiselect({
 
-            buttonClass: 'sort-button form-control',
-            buttonWidth: '100p%',
-            nonSelectedText: "\00",
-        });
-    });
-    </script>
+          buttonClass: 'sort-button form-control',
+          buttonWidth: '100%',
+          nonSelectedText: "\00",
+      });
+  });
+  </script>
+     <script src="../assets/js/script.js"></script>
+   
 </body>
 </html>

@@ -1,4 +1,6 @@
-
+console.log($('#smeServicesSelect').val());
+    
+    
     (function() {
         'use strict';
         window.addEventListener('load', function() {
@@ -10,6 +12,10 @@
            // console.log(form)
          
         // prevent submission
+    
+            
+
+     
           form.addEventListener('submit', function (event) {
         
               if ($('.signup-form').attr('id') === 'proSignupForm') {
@@ -21,21 +27,44 @@
                     phone : $('#proPhone').val()? $('#proPhone').val(): "",
                     skill : $('#proSkill').val()? $('#proSkill').val(): "",
                 }
-            }
+              }
+              if ($('.signup-form').attr('id') === 'smeSignupForm') {
+                url = 'smes.json';
+              formData = {
+                  companyName : $('#smeCompanyName').val()? $('#smeCompanyName').val(): "",
+                  companyLinkedIn: $('#smeCompanyLinkedIn').val() ? $('#smeCompanyLinkedIn').val() : "", 
+                  contactName : $('#smeContactName').val()? $('#smeContactName').val(): "",
+                  contactEmail : $('#smeContactEmail').val()? $('#smeContactEmail').val(): "",
+                  contactPhone : $('#smeContactPhone').val()? $('#smeContactPhone').val(): "",
+                  services : $('#smeServicesSelect').val()? $('#smeServicesSelect').val(): [],
+              }
+          }
       
-            $('.submit-btn').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Submitting...').addClass('disabled d-flex align-items-center');
+      
         
 
         if (form.checkValidity() === false) {
         event.preventDefault();
             event.stopPropagation();
-
-            if (formData.skill === "") {
-                $('.skill-feedback').show()
+            if ($('.signup-form').attr('id') === 'proSignupForm') {
+                formData.skill === "" ? $('.skill-feedback').show() : $('.skill-feedback').hide();
+                $('#proSignupForm').change(function (e) { 
+                    // e.preventDefault();
+                    $('#proSignupForm').val() === "" ? $('.skill-feedback').show() : $('.skill-feedback').hide();
+                  
+              });  
             }
-            else $('.skill-feedback').hide()
+
+            if ($('.signup-form').attr('id') === 'smeSignupForm') {
+                formData.services[0] === undefined ? $('.skill-feedback').show() : $('.skill-feedback').hide();
+                $('#smeServicesSelect').change(function (e) { 
+                    // e.preventDefault();
+                    $('#smeServicesSelect').val()[0] === undefined ? $('.skill-feedback').show() : $('.skill-feedback').hide();
+                  
+                });  
+            }
             
-            console.log('invalid')
+            //console.log('invalid')
       
           // console.log('validated')    
         } 
