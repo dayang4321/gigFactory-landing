@@ -10,7 +10,7 @@
     --alt-font-family: "Roboto", Helvetica, Arial, sans-serif;
   
    /* sizes 80,         24,18,14*/
-    --h1-font-size: min(max(40px, 5.56vw), 160px);
+    --h1-font-size: min(max(54px, 5.56vw), 160px);
     --h2-font-size: min(max(24px, 2.5vw), 96px);
     --h3-font-size: min(max(20px, 1.875vw), 72px);
   
@@ -90,8 +90,8 @@ body{
 }
 
 .cta-btn{
- padding: 1.8vh 6.25vw;
- border-radius: max(1.3vw, 10px);
+ padding: max(1.8vh,17px) max(6.25vw,72px);
+ border-radius: max(1.3vw, 12px);
  text-transform: uppercase;
 }
 
@@ -110,7 +110,7 @@ label{
     line-height: 1.16;
     color: #000000;
     border: 1px solid #ced4da;
-    border-radius: max(0.833vw, 6px);
+    border-radius: max(0.833vw, 12px);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -167,7 +167,7 @@ label{
 }
 
 .submit-btn{
-    border-radius: max(0.833vw, 6px);
+    border-radius: max(0.833vw, 12px);
     margin-top:7vh;
     padding: 1.8vh 6.25vw;
     text-transform: uppercase;
@@ -183,7 +183,7 @@ label{
 .footer-strip{
     position: absolute;
     left: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     height: 1.9vh
 }
@@ -206,6 +206,28 @@ label{
 
 
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {   
 
 
+
+    :root{
+       /* sizes 48,         24,18,14*/
+        --h1-font-size: min(max(36px, 11.6vw), 54px);
+        --h2-font-size: min(max(24px, 2.5vw), 96px);
+        --h3-font-size: min(max(20px, 1.875vw), 72px);
+      
+        --big-text: min(max(20px, 5.79vw), 24px);
+        --body-text: min(max(14px, 1.25vw), 36px);
+        --link-text: min(max(10px, 0.98vw), 28px);
+    }
+
+
+}
+
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+ 
+}
 

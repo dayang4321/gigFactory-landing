@@ -8,6 +8,7 @@
     height: 100vh;
     max-height: 1080px;
     color: #FFFFFF;
+    background-position: center;
     }
 
 .hero-container{
@@ -39,4 +40,15 @@
 
 .signup-title{
     font-weight: 700;
+}
+
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .form-block,
+    .info-block{
+        max-width: unset;
+        margin: 3vh 0;
+    }
+
 }
