@@ -32,6 +32,7 @@
 
 .form-block{
     max-width: 26.875vw;
+    min-width: 250px;
 }
 
 .info-block{
@@ -44,11 +45,15 @@
 
 
 /*  Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
+@media (max-width: 767.98px) { 
     .form-block,
     .info-block{
         max-width: unset;
         margin: 3vh 0;
+        min-width: unset;
+    }
+    .signup {
+        padding: 5vh 11vw 11.8vh;
     }
 
 }
