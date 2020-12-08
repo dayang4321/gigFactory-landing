@@ -84,7 +84,8 @@ console.log($('#smeServicesSelect').val());
                     console.log('success')    
                       $(".signup-title").fadeToggle(300);
                       $(".signup-title + h6").fadeToggle(300);
-                     $('.form-block').fadeOut(300);
+                    $('.form-block').fadeOut(300);
+                    $(".signup-title").toggleClass('vertical-pad');
                      $(".signup-title").html("We would be in touch with you very soon");
                     // $(".hero-title").removeClass('col-xl-7').addClass('mx-auto');
                      $(".signup-title").fadeToggle(300);
