@@ -1,4 +1,6 @@
-console.log($('#smeServicesSelect').val());
+$( document ).ready(function() {
+  new WOW().init();
+});
     
     
     (function() {
