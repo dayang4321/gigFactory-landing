@@ -163,6 +163,18 @@ font-size: max(5vw,64px) ;
     }
 
 
+.text-span{
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 30s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+   
+}
+
+.text-span:nth-last-of-type(2n){
+    animation-delay: 15s;
+}
+
+
     /*  Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767.98px) { 
     .form-block,
