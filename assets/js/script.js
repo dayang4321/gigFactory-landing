@@ -1,6 +1,10 @@
 $( document ).ready(function() {
   AOS.init();
 });
+
+// $(window).on("load",()=>{
+//     AOS.init();
+//    })
     
     
     (function() {
@@ -8,16 +12,9 @@ $( document ).ready(function() {
         window.addEventListener('load', function() {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var form = $('.signup-form')[0];
-
             var formData = {};
             var url = '';
-           // console.log(form)
          
-        // prevent submission
-    
-            
-
-     
           form.addEventListener('submit', function (event) {
         
               if ($('.signup-form').attr('id') === 'proSignupForm') {
